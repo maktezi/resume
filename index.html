@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/mylogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makTezi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <!-- <div class="logo"><img src="./assets/mylogo.png" alt=""></div> -->
+        <div class="logo">makTezi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="logo">makTezi</div>
+        <div class="my-menu">
+            <div class="my-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile-pic" src="./assets/profile-pic.png" alt="Mark Profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <p class="title">MARK</p>
+            <p class="section__text__p2">Website Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/indeed.png" alt="MyIndeed" class="icon" onclick="location.href='https://profile.indeed.com/p/markn-w33vjj5'">
+                <img src="./assets/github.png" alt="MyGithub" class="icon" onclick="location.href='https://github.com/maktezi'">
+                <img src="./assets/fb.png" alt="MyFacebook" class="icon" onclick="location.href='https://www.facebook.com/mlcnierras'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img class="about-pic" src="./assets/about-pic.png" alt="profile picture">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 year <br> Website Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelors Degree<br>Computer Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p id="p-about">Enthusiastic and detail-oriented website developer with a passion for crafting dynamic and visually appealing online experiences. Possessing a foundation in HTML, CSS, and JavaScript, I am eager to leverage my skills to contribute effectively to web development projects. During my academic journey, I gained hands-on experience in Programming: Gaining proficiency in programming languages such as C, Assembly Language; Computer Architecture: Exploring the design and organization of computer systems; Embedded Systems: Understanding the integration of hardware and software in specialized applications.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div id="exp-container" class="about-container">
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Website Development</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Intermediate</p><br>
+                                <p id="ptext">Design and modify websites.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p><br>
+                                <p id="ptext">Knowledge of JavaScript fundamentals and syntax.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>Laravel</h3>
+                                <p>Intermediate</p><br>
+                                <p id="ptext">Designed and hosted several systems for a government agency.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>Wordpress</h3>
+                                <p>Intermediate</p><br>
+                                <p id="ptext">Designed and hosted an e-commerce website.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p><br>
+                                <p id="ptext">Create, and manipulate databases using SQL.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Basic</p><br>
+                                <p id="ptext">Repository Management.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Proficiency</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>System Administration</h3>
+                                <p>Experienced</p><br>
+                                <p id="ptext">Installation, configuration, maintenance of computer systems and software.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>Network Administration</h3>
+                                <p>Experienced</p><br>
+                                <p id="ptext">Configuring Mikrotik, Ubiquiti, Cisco, Huawei, TP-Link, setup Local Network and Point-to-point setup.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="exp icon" class="icon">
+                            <div>
+                                <h3>Photo & Video Editing</h3>
+                                <p>Experienced</p><br>
+                                <p id="ptext">Proficient in Adobe Photoshop, After Effects and Premiere Pro</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div id="display-projects" class="about-container">
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="project1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">QR Code Attendance System</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maktezi/qr_attendance_system/'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://dolereg2023.app-gov.online/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="project1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Online Form System</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maktezi/online-forms'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://app-gov.online/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="project1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">IT Inventory</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://dole8inventory.freshfromuspng.store/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="project1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Wordpress e-commerce</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://freshfrom-us.com/'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:mlcnierras@gmail.com">Email</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/fb.png" alt="fb icon" class="icon contact-icon">
+                <p><a href="https://www.facebook.com/mlcnierras">Facebook</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 makTezi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
